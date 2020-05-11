@@ -1,3 +1,3 @@
 # leetcode problems prictice stored here
-add Hanoita problem solution
-add Leetcode91 solution
+1.add Hanoita problem solution
+2.add Leetcode91 solution
