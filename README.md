@@ -4,3 +4,7 @@ notiation practice
 ## 1. Array study and practice
 
 ## 2. recursion and Backtracking
+
+## 3. linked list
+
+## 4. stack and queue
