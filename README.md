@@ -8,3 +8,9 @@ notiation practice
 ## 3. linked list
 
 ## 4. stack and queue
+
+## 5. tree
+binary tree
+build binary tree class 
+did the traverse to the binarytree
+preorder, inorder, postorder, BFS
