@@ -14,3 +14,4 @@ binary tree
 build binary tree class 
 did the traverse to the binarytree
 preorder, inorder, postorder, BFS
+add eulertour method
