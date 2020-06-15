@@ -16,3 +16,9 @@ did the traverse to the binarytree
 preorder, inorder, postorder, BFS
 add eulertour method
 add tree recursion problems
+## python varibles type
+for int type: if i = 0:
+                not i is True 
+means i don't have value in int type
+same instances like:
+if a list = []: then not list is True
