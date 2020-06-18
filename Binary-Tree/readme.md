@@ -16,3 +16,4 @@ tree is very important datastructure, study its iteration of preoder, midorder, 
 ### level traversal
 ### BST
 Binary Search Tree: the inorder recursion traversal of BST is the increment order of traverse (BST 树的中序遍历是升序遍历）
+BST 树建立时， 一定要先确定好边界条件，否则test时，很容易死循环，又找不到错误
