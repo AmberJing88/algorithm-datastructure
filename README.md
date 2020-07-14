@@ -22,3 +22,7 @@ for int type: if i = 0:
 means i don't have value in int type
 same instances like:
 if a list = []: then not list is True
+## string
+kmp algorithm
+usually used in 0 1 string
+
