@@ -9,4 +9,5 @@ some array problems can be solved woth hashmap (leetcode697 378). some can be so
 # Review leetcode problems
 7 problems every day
 ## Record
+283, 566,
 
