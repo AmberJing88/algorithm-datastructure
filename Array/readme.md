@@ -11,4 +11,5 @@ some array problems can be solved woth hashmap (leetcode697 378). some can be so
 ## Record
 1. 283, 566,485,240,378,645, 448
 2. 697, 442, 287, 667,766, 565, 769
+3. 763
 
