@@ -12,7 +12,7 @@ def findshortest(nums):
             position[num][-1] = i
 
     max_count, max_nums = 0, []
-    for num, cnt in count.item():
+    for num, cnt in count.items():
         if cnt == max_count:
             max_nums.append(num)
         elif cnt >max_count:
