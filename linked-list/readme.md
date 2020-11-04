@@ -7,4 +7,4 @@ a. reverse: temp = head.next, head.next = new_node, new_node = head,
 b. pointer to next node: head = next
 # leetcode problems review
 1. 160, 206, 92,21,88,83
-2. 19, 24, 25,
+2. 19, 24, 25, 445, 234, 725, 328
