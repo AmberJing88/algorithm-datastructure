@@ -2,8 +2,8 @@
 """19:remove Nth mode from end of list"""
 def removeNth(head, n):
     i = n
-    prev = ListNode(None)
-    prev.next = head
+    #prev = ListNode(None)
+    #prev.next = head
     slow = fast = head
     while i >0:
         fast = fast.next
