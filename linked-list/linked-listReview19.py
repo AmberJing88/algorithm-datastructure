@@ -108,13 +108,13 @@ def splitListNode(root, k):
     while node:
         n += 1
         node = node.next
-    length, extent = divmod(n, k)
+    size, extent = divmod(n, k)
     pre, curr = None, root
     for _ in range(k):
         length = size
         if extent >0:
             extent -= 1
-            size += 1
+            length += 1
         result.append(curr)
         for _ in range(length):
             pre, curr = curr, curr.next
