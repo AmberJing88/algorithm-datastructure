@@ -11,4 +11,4 @@ from queue import Queue
 Queue function has normally singly queue methods: push, pop, peek, empty etc
 
 # leetocde problems review
-232, 225, 155
+232, 225, 155, 20, 739, 503,556
