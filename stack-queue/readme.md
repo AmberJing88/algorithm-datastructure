@@ -9,3 +9,6 @@ stack rule: Last in First out. can be used to check parentheses match or html ta
 ### queue
 from queue import Queue
 Queue function has normally singly queue methods: push, pop, peek, empty etc
+
+# leetocde problems review
+232, 
