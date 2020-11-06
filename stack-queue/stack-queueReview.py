@@ -102,7 +102,7 @@ def isMatch(s):
                     return False
                 if right.index(c) != left.index(stack.pop()):
                     return False
-    return len(stack)==0
+        return len(stack)==0
 
 #739
 """739: daily temperature: a list of temperature, return a list of days such that for
