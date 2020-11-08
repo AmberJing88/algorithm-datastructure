@@ -8,3 +8,5 @@ for i in nums:
 to construct a min_top heapq
 
 heap is using to find the kth largest (smallest) element or k largest elements  in an unsorted array
+# leetcode problems review
+1. 295, 215, 703
