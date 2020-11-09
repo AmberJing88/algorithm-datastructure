@@ -1,7 +1,7 @@
 """ Reshape the rows and columns of given matrix at same row-traversing order."""
-def ReshapeMatrix(nums):
+def ReshapeMatrix(nums,r,c):
     temp = []
-    r, c = 0, 0
+    #r, c = 0, 0
     for n in nums:
         temp += n
     reshape = []
@@ -10,9 +10,9 @@ def ReshapeMatrix(nums):
             reshape.append(temp[j:j+c])
         return reshape
 
-def reshapematrix(nums):
+def reshapematrix(nums, r, c):
     row, col = len(nums), len(nums[0])
-    r, c = 0, 0
+    #r, c = 0, 0
     temp = []
     reshape = [[]]
     for n in nums:
