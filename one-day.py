@@ -16,7 +16,7 @@ class MedianFinder:
         return (large[0] - small[0]) / 2.0
 
 #215
-form heapq import *
+from heapq import *
 def findkthlargest(nums):
     if not nums or not k or k >len(nums):
         return None
