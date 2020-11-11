@@ -71,7 +71,7 @@ class TreeNode:
         def balance(node):
             if not node:
                 return 0
-            lef_balance = balance(node.left)
+            left_balance = balance(node.left)
             right_balance = balance(node.right)
             if left_balance == -1 or right_balance ==-1:
                 return -1
