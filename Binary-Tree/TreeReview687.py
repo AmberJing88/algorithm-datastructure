@@ -111,4 +111,111 @@ def generateparenthese(n):
             parenthese(n, l, r+1, s+')')
     parenthese(n, 0, 0, "")
     return res
-          
+
+#669
+"""669: trim a bst: given a BST, and lowest and highest boundaries as L and R. trim the tree
+so that all its elements lies in [L, R], you might need to change the root of the tree. so that
+the result return the new root of trimed BST."""
+class Solution:
+    def trimBST(self, root, l, r):
+        if not root:
+            return None
+        if root.val > r:
+            return self.trimBST(root.left, l, r)
+        if root.val < l:
+            return self.trimBST(root.right, l, r)
+        else:
+            root.left = self.trimBST(root.left, l, r)
+            root.right = self.trimBST(root.right, l,r)
+        return root
+
+#230
+"""230: find the Kth smallest element in a BST."""
+class Solution:
+    def KthSmallestBST(self, root, k):
+        self.k_l = []
+        def inorder(root):
+            if not root: return
+            if root.left:
+                inorder(root.left)
+            self.k_l.append(roo.val)
+            if root.right:
+                inorder(root.right)
+        inorder(root)
+        return self.k_l[k-1]  # inorder is the increment direction in BST
+
+    #method iteration
+    def Kthsmallest(self, root, k):
+        s = []
+        while True:
+            while root:
+                s.append(root)
+                root = root.left
+            root = s.pop()
+            k -= 1
+            if not k:
+                reurn root.val
+            root = root.right
+
+#98
+"""98: validate BST: determin if a BST is valid, left subtree nodes less than root, right subtree nodes
+larger than root, all subtrees are BST."""
+class Solution:
+    def isValidBST(self, root):
+        if not root: return True
+        self.res = []
+        def inorder(node):
+            if not node: return
+            if node.left:
+                inorder(node.left)
+            self.res.append(node.val)
+            if node.right:
+                inorder(node.right)
+        inorder(root)
+        for i in range(len(self.res)-1):
+            if self.res[i] >= self.res[i+1]:
+                return False
+        return True
+
+    #optimized method
+def isValidBST(root):
+    if not root:
+        return True
+    def valid(root, floor = float('-inf'), ceiling=float('inf')):
+        if not root:
+            return True
+        if root.val >= ceiling or root.val <= floor:
+            return False
+        return valid(root.left, floor, root.val) and valid(root.right, root.val, ceiling)
+    return valid(root, float('-inf'), float('inf'))
+
+# iteration method
+def isValidBST(root):
+    s = []
+    curr, pre = root, TreeNode(None)
+    while s or curr:
+        if curr:
+            s.append(curr)
+            curr = curr.left
+        else:
+            curr = s.pop()
+            if pre and curr.val <= pre.val:
+                return False
+            pre = curr
+            curr = curr.right
+    return True
+
+# opimized iteration method
+def isvalidbst(root):
+    if not root: return True
+    stack = [(root, float('-inf'), float('inf'))]
+    while stack:
+        root, floor, ceiling = stack.pop()
+        if not root:
+            continue
+        val = root.val
+        if val <= floor or val >= ceiling:
+            return False
+        stack.append((root.right, val, ceiling))
+        stack.append((root.left, floor, val))
+    return True
