@@ -18,7 +18,7 @@ def longest(nums):
     nums = set(nums)
     longest = 0
     while nums:
-        first = last +nums.pop()
+        first = last = nums.pop()
         while first -1 in nums:
             first -= 1
             nums.remove(first)
