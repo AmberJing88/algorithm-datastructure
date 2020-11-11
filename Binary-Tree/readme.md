@@ -3,7 +3,7 @@ tree is very important datastructure, study its iteration of preoder, midorder, 
 ## leetcode problems review
 1. 104, 110,543,226,617
 2. 112, 445, 437,572, 101, 111, 404
-3. 687, 337,671, 70, 22,
+3. 687, 337,671, 70, 22, 669, 230, 98
 ## binary Tree
 1.learned how to construct a binary tree class
 2. did the traverse of binary tree class:
