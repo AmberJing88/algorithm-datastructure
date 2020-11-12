@@ -37,6 +37,7 @@ def SwapPairs(head):
 def reverseKgroup(head, k):
     if k <2:
         return head
+    node = head
     for i in range(k):
         if not node:
             return head
