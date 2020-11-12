@@ -180,7 +180,7 @@ class Solution:
         if not root: return 0
         queue  =[(root, 1)]
         while queue:
-            node.level = queue.pop(0)
+            node, level = queue.pop(0)
             if node:
                 if not node.left and not node.right:
                     return level
