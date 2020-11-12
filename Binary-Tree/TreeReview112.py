@@ -144,9 +144,9 @@ class Solution:
         q.put(root)
         while not q.empty():
             t1, t2 = q.get(), q.get()
-            if not t1 and t2:
+            if not t1 and not t2:
                 continue
-            if not t1 or t2:
+            if not t1 or not t2:
                 return False
             if t1.val != t2.val:
                 return False
