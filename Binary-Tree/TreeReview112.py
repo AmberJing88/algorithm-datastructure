@@ -108,7 +108,7 @@ class Solution:
                 serial.append("#")
                 return
             serial.append(",")
-            setial.append(str(node.val))
+            serial.append(str(node.val))
             serialize(node.left)
             serialize(node.right)
 
@@ -116,8 +116,8 @@ class Solution:
         s_serial = ''.join(serial)
         serial = []
         serialize(t)
-        t_serial = ''.join(setial)
-        return t_setial in s_setial
+        t_serial = ''.join(serial)
+        return t_serial in s_serial
 
 #101
 """101: symmetric tree: check whether a binary tree is a mirror of itself."""
