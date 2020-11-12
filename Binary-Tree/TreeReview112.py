@@ -63,7 +63,7 @@ class Solution:
             return count
         result = self.pathSum(root.left, sum) +
                 self.pathSum(root.right, sum) +
-                self.pathSum(root, sum)
+                pathSumStartnode(root, sum)
         return result
 
 # dictionary method
