@@ -54,7 +54,7 @@ class MyStack:
 
     def top(self):
         top = self.stack.get()
-        self.stack.push(top)
+        self.stack.put(top)
         return top
     def empty(self):
         return self.stack.empty()
