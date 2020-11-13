@@ -5,7 +5,7 @@ tree is very important datastructure, study its iteration of preoder, midorder, 
 2. 112, 445, 437,572, 101, 111, 404
 3. 687, 337,671, 70, 22, 669, 230, 98
 4. 538,235,236, 108, 109, 653, 530
-5. 501,208, 677,637,513, 
+5. 501,208, 677,637,513, 144,145
 ## binary Tree
 1.learned how to construct a binary tree class
 2. did the traverse of binary tree class:
@@ -13,12 +13,12 @@ tree is very important datastructure, study its iteration of preoder, midorder, 
 ## recursion
 在递归中， 若求解过程需涉及到所有点（所有点地位相同），那么在辅助函数中遍历当前点的左右子树， 在最终求解时， 需将根节点在辅助函数中遍历，同时将左右子节点作为根带入主函数，得到的结果才是所有点均遍历的结果
 # traversal
-### preorder traversal
-
+### preorder traversal: 
+root, left, right
 ### postorder traversal
-
+left, right, root
 ### inorder traversal
-
+left, root, right
 ### level traversal
 ### BST
 Binary Search Tree: the inorder recursion traversal of BST is the increment order of traverse (BST 树的中序遍历是升序遍历）
