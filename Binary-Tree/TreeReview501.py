@@ -167,3 +167,78 @@ def findBottomleft(root):
             if node.right:
                 q.append(node.right)
     return record
+
+#144
+"""144:given a binary tree, return the preorder traversal of its nodes value"""
+class Solution:
+    def preorder(self, root):
+        if not root:
+            return []
+        self.ans = []
+        def helper(node):
+            if not node: return
+            self.ans.append(node.val)
+            if node.left:
+                helper(node.left)
+            if node.right:
+                helper(node.right)
+        helper(root)
+        return self.ans
+# iteration
+def preorder(root):
+    if not root: return []
+    res = []
+    s = [root]
+    while s:
+        node = s.pop()
+        result.append(node.val)
+        if node.right:
+            s.append(node.right)
+        if node.left:
+            s.append(node.left)
+    return result
+
+#145
+"""145:given a binary tree, return the postorder traversal of its nodes value"""
+class Solution:
+    def postorder(self, root):
+        if not root: return []
+        self.ans = []
+        def helper(node):
+            if not node: return
+            if node.left:
+                helper(node.left)
+            if node.right:
+                helper(node.right)
+            self.ans.append(node.val)
+        return self.ans
+# iteration
+def postorder(root):
+    if not root: return []
+    res, s = [], [root]
+    while s:
+        node = s.pop()
+        if node is None: continue
+        res.append(node.val)
+        if node.left:
+            s.append(node.left)
+        if node.right:
+            s.append(node.right)
+    return res[::-1]
+# left-right-root
+def postorder2(root):
+    if not root: return []
+    res, s = [], [root]
+    head = root
+    while s:
+        t = s[-1]
+        if (not t.left and not t.right) or t.left ==head or t.right ==head:
+            res.append(t.val)
+            s.pop()
+            head = t
+        else:
+            if t.right:
+                s.append(t.right)
+            if t.left:
+                s.append(t.left)
+    return res
