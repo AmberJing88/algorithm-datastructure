@@ -105,4 +105,65 @@ class MapSum:
     def __init__(self):
         self.map = {}
         self.root = TrieNode()
-        
+
+    def insert(self,key, value):
+        delta = value - self.map.get(key, 0)
+        self.map[key] = value
+        curr = self.root
+        curr.score += delta
+        for char in key:
+            curr = curr.children.setdefault(char, TrieNode())
+            curr.score += delta
+
+    def sum(self, prefix):
+        curr = self.root
+        for char in prefix:
+            if char in curr.children:
+                return 0
+            curr = curr.children[char]
+        return curr.score
+
+#637
+"""637: non-empty binary tree, reurn the average value of the nodes on each level in the
+form of an array"""
+def averageLevels(root):
+    res = []
+    q = [root]
+    while q:
+        n = len(q)
+        summ = 0
+        for i in range(n):
+            node = q.pop()
+            summ += node.val
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+        res.append(summ/n)
+    return res
+
+#513
+def findBottomleft(root):
+    q = [root]
+    while q:
+        node = q.pop(0)
+        if node.right:
+            q.append(node.right)
+        if node.left:
+            q.append(node.left)
+    return node.value
+# from left to right level travese
+def findBottomleft(root):
+    q = [root]
+    record = 0
+    while q:
+        n = len(q)
+        for i in range(n):
+            node = q.pop(0)
+            if i==0:
+                record = node.val
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+    return record
