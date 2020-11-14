@@ -6,6 +6,7 @@ tree is very important datastructure, study its iteration of preoder, midorder, 
 3. 687, 337,671, 70, 22, 669, 230, 98
 4. 538,235,236, 108, 109, 653, 530
 5. 501,208, 677,637,513, 144,145
+6. 94 followed by backtracking 44
 ## binary Tree
 1.learned how to construct a binary tree class
 2. did the traverse of binary tree class:
