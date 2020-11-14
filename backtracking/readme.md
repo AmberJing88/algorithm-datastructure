@@ -1,4 +1,6 @@
 backtracking problem solutions stored here
+# leetcode problems review
+1.44,
 ## Hanoi Problem
 the key is clear about the step of move n-1 from b to a through c
 ## permutarion and combination problems
