@@ -74,7 +74,7 @@ def LCA(root, p, q):
     stack = [root]
     parent = {root:None}
     while p not in parent or q not in parent:
-        node = node.pop()
+        node = stack.pop()
         if node.left:
             parent[node.left] = node
             stack.append(node.left)
