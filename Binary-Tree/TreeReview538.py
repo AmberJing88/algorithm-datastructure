@@ -160,7 +160,7 @@ def findTarget(root, k):
 values of any two nodes"""
 class Solution:
     def getMinimumDiff(self, root):
-        sele.min = float('inf')
+        self.min = float('inf')
         self.pre = None
 
         def getmin(node):
