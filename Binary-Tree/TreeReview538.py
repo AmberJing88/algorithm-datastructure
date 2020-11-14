@@ -86,7 +86,7 @@ def LCA(root, p, q):
         ancestors.add(p)
         p = parent[p]
     while q not in ancestors:
-        q.parent[q]
+        q = parent[q]
     return q
 #108
 """convert sorted array to a height banlanced BST"""
