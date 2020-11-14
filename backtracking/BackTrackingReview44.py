@@ -198,3 +198,27 @@ def binarytree(root):
         if node.left:
             stack.append((node.left,ls+str(node.val)+'->'))
     return res
+
+#131
+"""131: given a string s, partition s such that every substring of partition is a palindrome
+return all palindrome partitions of s"""
+class Solution:
+    def partition(self,s):
+        if not s: return []
+        self.res = []
+        self.doPart(s,[])
+
+    def doPart(self,s, temp):
+        if len(s) ==0:
+            self.res.append(temp[:])
+            return
+        def ispalindrome(s,start,end):
+            while start<end:
+                if s[start] != s[end]:
+                    return False
+            return True
+        for i in range(0,len(s)):
+            if ispalindrome(s,0,i):
+                temp.append(s[:i+1])
+                self.doPart(temp,s[i+1:])
+                remp.pop()
