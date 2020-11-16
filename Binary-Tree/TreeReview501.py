@@ -59,7 +59,7 @@ def findMode(root):
             result.append(p.val)
             max = cnt
         pre = p
-        p = root.righty
+        p = p.right
     return result
 
 #208
