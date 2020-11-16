@@ -153,7 +153,7 @@ class UnionFind:
     def find(self, node):
         if self.father[node] ==node:
             return node
-        father[node] = self.find(falther[node])
+        father[node] = self.find(father[node])
         return father[node]
 
 #547
