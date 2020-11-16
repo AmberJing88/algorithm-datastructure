@@ -54,7 +54,7 @@ support for "?" for a single charactor and "*" for any sequence of charactors.""
 def isMatch(s,p):
     i,j,star = 0,0,-1
     while i < len(s):
-        if j >= len(p) or p[i] not in {'*','?'} and p[j] != s[i]:
+        if j >= len(p) or p[j] not in {'*','?'} and p[j] != s[i]:
             if star == -1:
                 return False
             j = star +1
