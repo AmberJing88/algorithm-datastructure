@@ -16,9 +16,9 @@ def findMode(root):
     for v in d:
         if d[v] > maxcount:
             maxcount = d[v]
-        for v in d:
-            if d[v] ==maxcount:
-                result.append(v)
+    for v in d:
+        if d[v] ==maxcount:
+            result.append(v)
     return result
 # iteration
 def findMode(root):
