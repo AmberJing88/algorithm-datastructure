@@ -95,7 +95,7 @@ class Solution:
         if not nums:
             return None
         mid = len(nums) //2
-        root = TreeNode(mid)
+        root = TreeNode(nums[mid])
         root.left = self.ArraytoBST(nums[:mid])
         root.right = self.ArraytoBST(nums[mid+1:])
         return root
