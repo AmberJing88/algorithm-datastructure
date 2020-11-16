@@ -173,7 +173,7 @@ def findCircleNum(M):
             if row not in seen:
                 dfs(row)
                 count += 1
-        return count
+    return count
 
 #130
 """130;surrounded regions:given 2D grid, containing 'x' blocks and '0' path, captured and fliping
