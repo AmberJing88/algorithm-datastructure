@@ -93,7 +93,7 @@ def maxAreaIsland(grid):
         for d in direction:
             area += DFS(grid, i+d[0],j+d[1])
         return area
-    for i in rane(m):
+    for i in range(m):
         for j in range(n):
             res = max(res, DFS(grid,i,j))
     return res
