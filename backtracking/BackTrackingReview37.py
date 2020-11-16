@@ -23,7 +23,7 @@ class Solution:
                 if self.solve():
                     return True
                 self.board[row][col] ='.'
-                self.state-= 1
+                self.state[num] -= 1
         return False
     def findUnassigned(self):
         for row in range(9):
