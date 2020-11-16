@@ -215,7 +215,7 @@ def PacificAtlantic(matrix):
     pacific = [[False for _ in range(n)] for _ in range(m)]
     atlantic = [[False for _ in range(n)] for _ in range(m)]
 
-    def (matrix, visited, pre, i, j):
+    def dfs(matrix, visited, pre, i, j):
         if i <0 or i >=m or j<0 or j>=n or visited[i][j] or matrix[i][j]<pre:
             return
         vcisited[i][j]= True
