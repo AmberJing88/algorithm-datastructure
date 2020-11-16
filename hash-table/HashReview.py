@@ -30,5 +30,5 @@ def findHs(nums):
     max_f = 0
     for num, cnt in frequence.items():
         if num-1 in frequence:
-            max_f = max(max_f, cnt+frequece[num-1])
+            max_f = max(max_f, cnt+frequence[num-1])
     return max_f
