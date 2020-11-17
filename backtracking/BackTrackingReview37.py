@@ -131,7 +131,7 @@ class SOlution:
                         x, y = i +d[0], j+d[1]
                         if x >=0 and x<m and 0<=y<n and grid[x][y]=='1':
                             id1, id2 = i*n+j, x*n+y
-                            us.Union(id1, id2)
+                            uf.Union(id1, id2)
         return us.count
 class UnionFind:
     def UnionFind(self, grid):
@@ -144,7 +144,7 @@ class UnionFind:
                     id = i*n +j
                     self.father[id]=id
                     self.count += 1
-    def union(self,node1,node2):
+    def Union(self,node1,node2):
         find1 = self.find(node1)
         find2 = self.find(node2)
         if find1 != find2:
