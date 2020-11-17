@@ -157,7 +157,7 @@ def numlength(beginword, endword, wordlist):
     visited = {beginword:True}
     while q:
         c_word, level = q.popleft()
-        for in range(L):
+        for i in range(L):
             intermediate_word=c_word[:i]+'*'+c_word[i+1:]
             for word in all_dict[intermediate_word]:
                 if word==endword:
