@@ -28,10 +28,10 @@ class Solution:
         else:
             return len(shortest_path)
 
-    def a_star_search(self,goal_function,success_function,heuristic):
+    def a_star_search(self,goal_function,successor_function,heuristic):
         visited,came_from=set(), dict()
         distance, frontier = {start:0}, PriorityQueue()
-        feontier.add(start)
+        frontier.add(start)
         while frontier:
             node = frontier.pop()
             if node in visited: continue
