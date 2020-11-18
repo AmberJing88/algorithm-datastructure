@@ -152,7 +152,7 @@ def IPaddress(s):
 """79:word search; given 2D board and a word, find if the word exists in the grid, the word can
 be constructed from letters of sequentially adjacent cell, where adjacent cells are those
 horizontally or vertically neibouring. the same letter cell may not be used more than once."""
-def exist(board, word):
+def exist(board,word):
     if not board: return False
     def DFS(board, i, j, word):
         if len(word)==0:
