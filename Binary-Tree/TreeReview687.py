@@ -30,7 +30,7 @@ def longestUnivalue(root):
     count = 0
     d = {None:0}
     while postorder:
-        see, node, parent = postorder.pop()
+        seen, node, parent = postorder.pop()
         if node is None: continue
         if not seen:
             postorder.append((1, node, parent))
