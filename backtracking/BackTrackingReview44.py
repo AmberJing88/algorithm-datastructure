@@ -139,7 +139,7 @@ def IPaddress(s):
                 if i !=0 and s[0]=='0':
                     break
                 part = s[:i+1]
-                if int[part] <=255:
+                if int(part) <=255:
                     if len(temp)!=0:
                         part='.' +part
                     temp += part
