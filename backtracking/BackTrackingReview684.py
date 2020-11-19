@@ -44,7 +44,7 @@ def validTree(n,edges):
         if rooti ==rootj:
             return False
         parent[rooti]=rootj
-        return len(edges)==n-1
+    return len(edges)==n-1
 #method 2
 def validTree(n,edges):
     graph = {i:[] for i in range(n)}
