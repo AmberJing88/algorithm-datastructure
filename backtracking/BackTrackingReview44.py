@@ -189,6 +189,7 @@ def binarytree(root):
 # iteration stack
 def binarytree(root):
     if not root: return []
+    stack = [root]
     while stack:
         node,ls = stack.pop()
         if not node.left and not node.right:
