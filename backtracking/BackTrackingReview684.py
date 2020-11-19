@@ -101,10 +101,10 @@ def combine(n,k):
     def dfs(start,sub):
         if len(sub)==k:
             res.append(sub[:])
-            for i in range(start,n+1):
-                sub.append(i)
-                dfs(i+1, sub)
-                sub.pop()
+        for i in range(start,n+1):
+            sub.append(i)
+            dfs(i+1, sub)
+            sub.pop()
     res = []
     dfs(1,[])
     return res
