@@ -82,7 +82,7 @@ def ways(s,n):
 def numDecode(s):
     if s[0]=='0': return 0
     prev1 = 1
-    if s[0] != 0:
+    if s[0] != '0':
         curr = 1
         prev2 = curr
     for i in range(1, len(s)):
