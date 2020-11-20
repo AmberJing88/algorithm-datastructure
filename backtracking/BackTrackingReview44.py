@@ -177,7 +177,7 @@ def binarytree(root):
     if not root: return []
     def DFS(node, temp):
         if not node.left and not node.right:
-            res.append(tem+str(node.val))
+            res.append(temp+str(node.val))
         temp += str(node.val) +'->'
         if node.left:
             DFS(node.left,temp)
