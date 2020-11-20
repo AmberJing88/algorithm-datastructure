@@ -103,6 +103,7 @@ def climbstairs(n):
             return memo[i]
         memo[i] = climb(n,i+1,memo) +climb(n, i+2,memo)
         return memo[i]
+    return climb(n,0,memo)
 
 #22
 """22 generate parenthese:"""
