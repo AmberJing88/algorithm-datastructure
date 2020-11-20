@@ -153,7 +153,7 @@ def IPaddress(s):
 be constructed from letters of sequentially adjacent cell, where adjacent cells are those
 horizontally or vertically neibouring. the same letter cell may not be used more than once."""
 def exist(board,word):
-    if not board: return False
+    if not board or len(board):==0 or len(board[0])==0: return False
     def DFS(board, i, j, word):
         if len(word)==0:
             return True
