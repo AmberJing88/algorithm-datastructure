@@ -118,7 +118,7 @@ class MapSum:
     def sum(self, prefix):
         curr = self.root
         for char in prefix:
-            if char in curr.children:
+            if char not in curr.children:
                 return 0
             curr = curr.children[char]
         return curr.score
