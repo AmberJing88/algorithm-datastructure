@@ -84,7 +84,7 @@ class NQueens:
             nums[index] = i
             if self.valid(nums,index):
                 temp = '.' * len(nums)
-                self.dfs(nums,index+1,path+temp[:i]+'Q'+temp[:i+1],res)
+                self.dfs(nums,index+1,path+temp[:i]+'Q'+temp[i+1:],res)
 
     def valid(self,nums,index):
         for i in range(index):
