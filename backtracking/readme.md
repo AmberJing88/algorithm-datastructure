@@ -6,6 +6,7 @@ backtracking problem solutions stored here
 4. 684,261, 78, 90, 77, 39, 40
 5. 46, 216, 47, 91, 247, 96
 6. 95, 241, 39, 51, 70, 22, 111
+7. 297, 236,77, 226, 98, 104, 105
 ## Hanoi Problem
 the key is clear about the step of move n-1 from b to a through c
 ## permutarion and combination problems
