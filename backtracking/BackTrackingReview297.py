@@ -23,7 +23,7 @@ def deserialize(data):
         node.left = build()
         node.right = build()
         return node
-    return build(vals)
+    return build()
 
 # bfs method
 def serialize(root):
