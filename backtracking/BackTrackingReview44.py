@@ -119,7 +119,7 @@ def lettercombine(digits):
         for i in letters:
             sub += i
             DFS(sub,index+1,keys)
-            sub = sub[-1]
+            sub = sub[:-1]
     DFS('',0,keys)
     return res
 
