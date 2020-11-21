@@ -15,7 +15,7 @@ def serialize(root):
 
 def deserialize(data):
     vals = iter(data.split())
-    def build(vals):
+    def build():
         vals = next(vals)
         if val =='#':
             return None
