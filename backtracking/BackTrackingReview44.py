@@ -222,4 +222,4 @@ class Solution:
             if ispalindrome(s,0,i):
                 temp.append(s[:i+1])
                 self.doPart(temp,s[i+1:])
-                remp.pop()
+                temp.pop()
