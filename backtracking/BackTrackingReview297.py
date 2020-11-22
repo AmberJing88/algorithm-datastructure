@@ -121,8 +121,8 @@ def validbst(root):
 """104; max depth of binary tree"""
 def maxdepth(root):
     if not root: return 0
-    left = maxdep(root.left)
-    right = max(root.right)
+    left = maxdepth(root.left)
+    right = maxdepth(root.right)
     return 1 + max(left,right)
 
 #105
