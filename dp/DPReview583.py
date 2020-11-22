@@ -69,7 +69,7 @@ def minSteps(n):
     if n==1: return 0
     res = n
     for i in range(n-1,1, -1):
-        if n%i ==:
+        if n%i ==0:
             res = min(res, minSteps(n//i)+i)
     return res
 # dp
