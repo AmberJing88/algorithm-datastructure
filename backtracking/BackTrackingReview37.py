@@ -218,7 +218,7 @@ def PacificAtlantic(matrix):
     def dfs(matrix, visited, pre, i, j):
         if i <0 or i >=m or j<0 or j>=n or visited[i][j] or matrix[i][j]<pre:
             return
-        vcisited[i][j]= True
+        visited[i][j]= True
         directions = [(1,0),(-1,0),(0,1),(0,-1)]
         for d in directions:
             dfs(matrix, visited, matrix[i][j],i+d[0],j+d[1])
