@@ -86,7 +86,7 @@ def coinchange(coins, amount):
         for i in range(coin,amount+1):
             if i==coin:
                 dp[i]=1
-            elif dp[i]==0 and dp[i-coin] and1=0:
+            elif dp[i]==0 and dp[i-coin] !=0:
                 dp[i] = dp[i-coin]+1
             elif dp[i-coin]!=0:
                 dp[i] = min(dp[i], dp[i-coin]+1)
