@@ -2,7 +2,7 @@
 """583; delete epration for two strings, find the minimum number of steps to make two given strings
 same, where in each step you can delete one character in either string. (EDIT DISTANCE)"""
 def minDistance(word1,word2):
-    m,n = len(word1), lend(word2):
+    m,n = len(word1), len(word2):
     if m==0: return n
     if n==0: return m
     dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
