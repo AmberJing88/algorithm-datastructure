@@ -103,7 +103,7 @@ def wordBreak(string, dict):
         for word in dict:
             n = len(word)
             if n<=i and word ==s[i-n:i]:
-                dp[i] = d[i] or dp[i-n]
+                dp[i] = dp[i] or dp[i-n]
     return dp[len(string)]
 
 #122
