@@ -64,7 +64,7 @@ class Solution:
             return ((i+a,j+b) for a in (-1,0,1) for b in (-1,0,1)
             if a!=0 or b !=0
             if 0 <=i+a <len(grid) if 0 <=j+b <len(grid[0])
-            if grid[i+1][j+b]==0)
+            if grid[i+a][j+b]==0)
         return get_clear_adjacent_cells
 
     def get_heuristic(grid):
