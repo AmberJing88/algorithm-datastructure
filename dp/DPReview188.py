@@ -152,7 +152,7 @@ def canPartition(nums):
     dp = [False for _ in range(summ+1)]
     dp[0] = True
     for num in nums:
-        for i in range(sum,num-1,-1):
+        for i in range(summ,num-1,-1):
             dep[i] = dp[i] or dp[i-num]
     return dp[sum]
 
