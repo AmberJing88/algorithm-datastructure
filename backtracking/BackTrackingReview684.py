@@ -34,7 +34,7 @@ def findRedundant(edges):
 #261
 """261; graph valid tree, no cycle in the graph"""
 def validTree(n,edges):
-    parents= [0 for _ in range(n1)]
+    parents= [0 for _ in range(n+1)]
     def find(x):
         if parent[x]==0:
             parents[x]= find(parent[x])
