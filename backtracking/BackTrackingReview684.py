@@ -36,9 +36,9 @@ def findRedundant(edges):
 def validTree(n,edges):
     parents= [0 for _ in range(n+1)]
     def find(x):
-        if parent[x]==0:
-            parents[x]= find(parent[x])
-            return parent[x]
+        if parent[x]==0: return x
+        parents[x]= find(parent[x])
+        return parent[x]
     for i,j in edges:
         rooti, rootj = find(i),find(j)
         if rooti ==rootj:
